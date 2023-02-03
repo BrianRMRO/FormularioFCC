@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title" id="title">Formulario de encuesta</h1>
+    <p class="description" id="description">Esta encuesta esta realizada para la certificación de FreeCodeCamp</p>
+    <form action='' class='form' id="survey-form">
+        <p class='field required'>
+          <label class='label required' for='name' id="name-label">Nombre</label>
+          <input class='text-input' id="name" type="text" name='name' required placeholder="Nombre">
+        </p>
+        <p class='field required half'>
+          <label class='label' for='email' id="email-label">Email</label>
+          <input class='text-input' id="email" type="email" name='email' required placeholder="Email">
+        </p>
+        <p class='field half'>
+          <label class='label' for='phone'  id="number-label" >Edad</label>
+          <input class='text-input' id="number" name='edad' type='number' min="18" max="99" placeholder="Edad entre 18 y 99" required>
+        </p>
+        <div class='field'>
+          <label class='label'>Estoy interesado en:</label>
+          <ul class='checkboxes'>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='choice-0' name='choice' type='checkbox' value='0'>
+              <label class='checkbox-label' for='choice-0'>Mantenimiento de página</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='choice-1' name='choice' type='checkbox' value='1'>
+              <label class='checkbox-label' for='choice-1'>Ayuda en proyecto</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='choice-2' name='choice' type='checkbox' value='2'>
+              <label class='checkbox-label' for='choice-2'>Creación de proyecto</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='choice-3' name='choice' type='checkbox' value='3'>
+              <label class='checkbox-label' for='choice-3'>Diseño web</label>
+            </li>
+            <li class='checkbox'>
+              <input class='checkbox-input' id='choice-4' name='choice' type='checkbox' value='4'>
+              <label class='checkbox-label' for='choice-4'>Otro</label>
+            </li>
+          </ul>
+        </div>
+        <div class='field'>
+          <label class='label'>Soy una:</label>
+          <ul class='options'>
+            <li class='option'>
+              <input class='option-input' id='option-0' name='option' type='radio' value='0'>
+              <label class='option-label' for='option-0'>Persona</label>
+            </li>
+            <li class='option'>
+              <input class='option-input' id='option-1' name='option' type='radio' value='1'>
+              <label class='option-label' for='option-1'>Empresa</label>
+            </li>
+          </ul>
+        </div>
+        <p class='field'>
+          <label class='label' for='about'>Mensaje</label>
+          <textarea class='textarea' cols='50' id='about' name='about' rows='4' placeholder="Información adicional"></textarea>
+        </p>
+        <p class='field half'>
+          <label class='label' for='select'>Oferta</label>
+          <select class='select' id='dropdown'>
+            <option selected value=''>Seleccionar una</option>
+            <option value='front-end'>Desarrollador Front-end</option>
+            <option value='back-end'>Desarrollador Back-end</option>
+            <option value='desarrollo'>Desarrollar pagina completa</option>
+            <option value='equipo'>Unirse a equipo de trabajo</option>
+          </select>
+        </p>
+        <p class='field half'>
+          <input class='button' id="submit" type='submit' value='Enviar'>
+        </p>
+      </form>
+  </body>
+
+</html>
